@@ -1,0 +1,11 @@
+aws_region             = "us-east-1"
+environment            = "prod"
+project_name           = "cost-anomaly-bot"
+slack_webhook_url      = "https://example.com/replace-with-your-slack-webhook"
+schedule_expression    = "cron(0 8 * * ? *)" # 08:00 UTC daily
+baseline_days          = 14
+percentage_threshold   = 25.0
+min_absolute_spike_usd = 15.0
+critical_absolute_usd  = 100.0
+resource_tag_key       = "Owner"
+send_daily_summary     = true
